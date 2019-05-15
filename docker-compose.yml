@@ -29,7 +29,7 @@ services:
 
     php-fpm:
         build: docker/php-fpm
-        container_name: jobeet-php-fpm
+        container_name: Gldra-php-fpm
         working_dir: /application
         volumes:
             - .:/application
