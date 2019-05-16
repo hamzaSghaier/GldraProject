@@ -27,12 +27,21 @@
                 <th>Numtel</th>
                 <td>{{ prof.Numtel }}</td>
             </tr>
-             <tr>
-             <th>Nom de Matiere</th>
-            {% for user in prof.matieres %}
-       <td>{{ user.nom|e }}</td>
-         </tr>
-    {% endfor %}
+            <tr>
+                <th>Password</th>
+                <td>{{ prof.password }}</td>
+            </tr>
+            <tr>
+                <th>Username</th>
+                <td>{{ prof.Username }}</td>
+            </tr>
+               <tr>
+                <th>List des Matieres</th>
+                 {% for mat in prof.matieres %}
+                <td><li>{{ mat.nom}}</li></td>
+                    {% endfor %}
+
+            </tr>
         </tbody>
     </table>
 

@@ -16,7 +16,8 @@ class ProfType extends AbstractType
             ->add('Prenom')
             ->add('email')
             ->add('Numtel')
-            
+            ->add('password')
+            ->add('Username')
         ;
     }
 
